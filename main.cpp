@@ -157,7 +157,7 @@ int run_keyboard(AudioUnit* synthUnit, input_buffer buffer, UInt8 midiChannel) {
         }
         
         nextNote            = notes[data[TG_DATA_ATTENTION] % 7] + octives[data[TG_DATA_THETA] % 3];
-        nextDuration        = 200000;
+        nextDuration        = 150000; //200000;
 				onVelocity 					= data[TG_DATA_MEDITATION] + 50; // 0-127
         if (nextNote - lastNote > 4 && rand() % 10 > 7) {
             nextNote = lastNote + 1;
@@ -191,7 +191,7 @@ int run_drums(AudioUnit* synthUnit, input_buffer buffer, UInt8 midiChannel) {
         }
         
         UInt32 noteNum = data[TG_DATA_ATTENTION] % 7;
-        UInt32 onVelocity = data[TG_DATA_MEDITATION] + 50; // 0-127
+        UInt32 onVelocity = 127; // 0-127
         UInt32 noteOnCommand = 	kMidiMessage_NoteOn << 4 | midiChannel;
         cout << "Dums: " << noteNum << endl;
         require_noerr (result = MusicDeviceMIDIEvent(*synthUnit, noteOnCommand, notes[noteNum], onVelocity, 0), finished);
@@ -384,7 +384,7 @@ int main (int argc, const char * argv[]) {
             }
         }
         
-        usleep (10000);        
+        usleep (100000);        
     }
     
 home:
