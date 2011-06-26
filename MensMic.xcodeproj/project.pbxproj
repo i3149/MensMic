@@ -1,0 +1,270 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C04A2ED1393663100320F1F /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C04A2EC1393663100320F1F /* buffer.h */; };
+		3C04A34E13947FF000320F1F /* libboost_thread-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C04A34D13947FF000320F1F /* libboost_thread-mt.dylib */; };
+		3EB3AE45079D59B20046E3F3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
+		3EB3AE47079D59B20046E3F3 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9707D92049C008800000102 /* AudioUnit.framework */; };
+		3EB3AE48079D59B20046E3F3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9707DA8049C09FE00000102 /* AudioToolbox.framework */; };
+		3EB3AE49079D59B20046E3F3 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9707DA9049C09FE00000102 /* CoreServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3EB3AE4B079D59B20046E3F3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08FB7796FE84155DC02AAC07 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		3C04A2EC1393663100320F1F /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		3C04A34D13947FF000320F1F /* libboost_thread-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_thread-mt.dylib"; path = "/opt/local/lib/libboost_thread-mt.dylib"; sourceTree = "<absolute>"; };
+		3EB3AE4C079D59B20046E3F3 /* MensMic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = MensMic; path = PlaySoftMIDI; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9707D92049C008800000102 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = /System/Library/Frameworks/AudioUnit.framework; sourceTree = "<absolute>"; };
+		A9707DA8049C09FE00000102 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
+		A9707DA9049C09FE00000102 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3EB3AE46079D59B20046E3F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EB3AE47079D59B20046E3F3 /* AudioUnit.framework in Frameworks */,
+				3EB3AE48079D59B20046E3F3 /* AudioToolbox.framework in Frameworks */,
+				3EB3AE49079D59B20046E3F3 /* CoreServices.framework in Frameworks */,
+				3C04A34E13947FF000320F1F /* libboost_thread-mt.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0249A662FF388D9811CA2CEA /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				A9707D92049C008800000102 /* AudioUnit.framework */,
+				A9707DA8049C09FE00000102 /* AudioToolbox.framework */,
+				A9707DA9049C09FE00000102 /* CoreServices.framework */,
+				3C04A34D13947FF000320F1F /* libboost_thread-mt.dylib */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		08FB7794FE84155DC02AAC07 /* PlaySoftMIDI */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				0249A662FF388D9811CA2CEA /* External Frameworks and Libraries */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = PlaySoftMIDI;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3C04A2EC1393663100320F1F /* buffer.h */,
+				08FB7796FE84155DC02AAC07 /* main.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3EB3AE4C079D59B20046E3F3 /* MensMic */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3EB3AE43079D59B20046E3F3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C04A2ED1393663100320F1F /* buffer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3EB3AE42079D59B20046E3F3 /* MensMic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9E8847E0874AB4F00B2DFE8 /* Build configuration list for PBXNativeTarget "MensMic" */;
+			buildPhases = (
+				3EB3AE43079D59B20046E3F3 /* Headers */,
+				3EB3AE44079D59B20046E3F3 /* Sources */,
+				3EB3AE46079D59B20046E3F3 /* Frameworks */,
+				3EB3AE4A079D59B20046E3F3 /* Rez */,
+				3EB3AE4B079D59B20046E3F3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MensMic;
+			productInstallPath = "$(HOME)/bin";
+			productName = PlaySoftMIDI;
+			productReference = 3EB3AE4C079D59B20046E3F3 /* MensMic */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = A9E884820874AB4F00B2DFE8 /* Build configuration list for PBXProject "MensMic" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* PlaySoftMIDI */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3EB3AE42079D59B20046E3F3 /* MensMic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXRezBuildPhase section */
+		3EB3AE4A079D59B20046E3F3 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3EB3AE44079D59B20046E3F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EB3AE45079D59B20046E3F3 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A9E8847F0874AB4F00B2DFE8 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = /opt/local/include/;
+				INSTALL_PATH = "$(HOME)/bin";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+				);
+				PRODUCT_NAME = PlaySoftMIDI;
+				REZ_EXECUTABLE = YES;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Development;
+		};
+		A9E884800874AB4F00B2DFE8 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INSTALL_PATH = "$(HOME)/bin";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+				);
+				PRODUCT_NAME = PlaySoftMIDI;
+				REZ_EXECUTABLE = YES;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Deployment;
+		};
+		A9E884810874AB4F00B2DFE8 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INSTALL_PATH = "$(HOME)/bin";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+				);
+				PRODUCT_NAME = PlaySoftMIDI;
+				REZ_EXECUTABLE = YES;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		A9E884830874AB4F00B2DFE8 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Development;
+		};
+		A9E884840874AB4F00B2DFE8 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Deployment;
+		};
+		A9E884850874AB4F00B2DFE8 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9E8847E0874AB4F00B2DFE8 /* Build configuration list for PBXNativeTarget "MensMic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9E8847F0874AB4F00B2DFE8 /* Development */,
+				A9E884800874AB4F00B2DFE8 /* Deployment */,
+				A9E884810874AB4F00B2DFE8 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		A9E884820874AB4F00B2DFE8 /* Build configuration list for PBXProject "MensMic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9E884830874AB4F00B2DFE8 /* Development */,
+				A9E884840874AB4F00B2DFE8 /* Deployment */,
+				A9E884850874AB4F00B2DFE8 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
